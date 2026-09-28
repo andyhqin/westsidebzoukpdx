@@ -55,8 +55,8 @@ export function AboutPage() {
       {/* TBD: add real names, photos, and bios. */}
       <Section title="Your instructors" tone="tinted">
         <CardGrid>
-          <Card title="Andrew">
-            <p>Founder and instructor. Bio coming soon.</p>
+          <Card title="Founder & lead instructor">
+            <p>Bio coming soon.</p>
           </Card>
           <Card title="Teaching partner">
             <p>Co-instructor. Name and bio coming soon.</p>
