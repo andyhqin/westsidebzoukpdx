@@ -1,0 +1,20 @@
+.header {
+  padding: var(--space-8) var(--gutter) var(--space-7);
+  background: var(--color-surface-alt);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.inner {
+  max-width: var(--reading-width);
+  margin: 0 auto;
+}
+
+.inner h1 {
+  margin-bottom: var(--space-3);
+}
+
+.intro {
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  margin: 0;
+}

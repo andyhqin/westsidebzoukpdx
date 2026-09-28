@@ -1,0 +1,22 @@
+.section {
+  padding: var(--space-8) var(--gutter);
+}
+
+.tinted {
+  background: var(--color-surface-alt);
+}
+
+.inner {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.reading {
+  max-width: var(--reading-width);
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: var(--space-7) var(--gutter);
+  }
+}

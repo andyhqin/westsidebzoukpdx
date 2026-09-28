@@ -1,0 +1,25 @@
+.list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.question {
+  cursor: pointer;
+  padding: var(--space-4) var(--space-5);
+  font-weight: 700;
+  list-style-position: inside;
+}
+
+.answer {
+  padding: 0 var(--space-5) var(--space-4);
+}
+
+.answer > :last-child {
+  margin-bottom: 0;
+}
