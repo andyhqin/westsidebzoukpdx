@@ -4,3 +4,10 @@ dist
 .DS_Store
 .vscode/*
 !.vscode/extensions.json
+
+# Local Netlify folder
+.netlify
+
+# Claude Code local data and agent skills
+.claude/
+skills-lock.json
