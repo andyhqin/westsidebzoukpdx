@@ -54,15 +54,20 @@ src/
 
 Each component keeps its styles in a matching `.module.css` file, so styles never leak between components.
 
-## Publish on GitHub Pages
+## Publish on Netlify
 
-1. Create a GitHub repository and push this folder to its `main` branch.
-2. In the repo, go to **Settings → Pages** and set **Source** to **GitHub Actions**.
-3. Every push to `main` builds and publishes the site automatically (see `.github/workflows/deploy.yml`).
+The repository is connected to Netlify, so publishing is automatic:
 
-Page URLs look like `yoursite/#/classes`. This "hash" style is what lets every link and refresh work on GitHub Pages without extra setup.
+- Every push to `main` builds and deploys to production.
+- Every pull request gets its own Deploy Preview URL.
 
-To use a custom domain (e.g. `westsidezouk.com`), add it under **Settings → Pages → Custom domain**.
+Build settings live in `netlify.toml` — `npm run build` into `dist`, on Node 22.
+
+Page URLs look like `yoursite/#/classes`. This "hash" style keeps every link and
+refresh working without server configuration.
+
+To use a custom domain (e.g. `westsidezouk.com`), add it in the Netlify dashboard
+under **Project configuration → Domain management**.
 
 ## Checks
 

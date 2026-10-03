@@ -1,7 +1,7 @@
 /**
  * A tiny hash-based router (URLs look like /#/classes).
  *
- * Why hash routing: GitHub Pages serves static files only, so a URL like
+ * Why hash routing: the site is served as static files, so a URL like
  * /classes would 404 on refresh. Hash URLs always load index.html, so every
  * page link and refresh works with zero server configuration.
  *

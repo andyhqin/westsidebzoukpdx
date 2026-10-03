@@ -1,10 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// `base: "./"` makes every asset path relative, so the built site works on
-// GitHub Pages under any repository name (and on any other static host)
-// without further configuration.
+// The site is served from the root of its own domain on Netlify, so absolute
+// asset paths are correct and keep working at any URL depth.
 export default defineConfig({
-  base: "./",
+  base: "/",
   plugins: [react()],
 });
